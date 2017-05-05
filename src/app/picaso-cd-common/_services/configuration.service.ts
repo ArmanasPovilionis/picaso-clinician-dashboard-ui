@@ -1,4 +1,4 @@
-const BASE_API_URL = "https://picaso.fit.fraunhofer.de/api/";
+const BASE_API_URL = "https://localhost:8080/api/";
 const config = {
     "CLINICIAN_DASHBOARD_URL": BASE_API_URL + "cd/",
     "API": {
