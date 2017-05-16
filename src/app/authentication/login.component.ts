@@ -10,8 +10,8 @@ import {CdSharedModelService} from "../picaso-cd-common/_services/cd-shared-mode
 export class LoginComponent {
     error: any;
     public loginForm = this.fb.group({
-        username: ["test", Validators.required],
-        password: ["test", Validators.required]
+        username: ["franco", Validators.required],
+        password: ["pwdfranco", Validators.required]
     });
 
     constructor(public fb: FormBuilder, private authService: UserService, private router: Router, private shared: CdSharedModelService) {

@@ -1,3 +1,136 @@
 <div class="animated fadeIn">
-    Placeholder for risk-manager component
+    <script>
+    var requireJS = [];
+    loadJS(requireJS, "risks.js");
+</script>
+
+<div class="card">
+    <div class="card-header">
+        <strong>Risk Score</strong>
+    </div>
+    <div class="card-actions">
+
+    </div>
+    <div class="card-block">
+      <table class="table table-striped table-hover data-table" id="oTBL_dataa" style="max-width: 1050px;">
+       <thead>
+           <tr>
+               <th style="font-size: 14pt;">Legend</th>
+               <th style="font-size: 14pt;">CV Risk Score</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td style="min-width: 350px; max-width: 350px;">
+                   <table class="table table-bordered table-striped table-hover data-table">
+                       <tbody>
+                           <tr style="height: 50px" class="" data-original-title="Questa classe di rischio MCV (Malattia CardioVascolare)
+                                 indica che su 100 persone con le stesse caratteristiche
+                                 più di 30 sono attese ammalarsi nei 5, 10, 15 o 20 anni successivi">
+                               <td style="min-width: 120px;">Risk score VI</td>
+                               <td style="min-width: 20px; background-color: #bf7ead">&nbsp;</td>
+                               <td style="min-width: 100px;">over 30%</td>
+                           </tr>
+                           <tr style="height: 50px" class="" data-original-title="Questa classe di rischio MCV (Malattia CardioVascolare)
+                                 indica che su 100 persone con le stesse caratteristiche
+                                 tra le 20 e le 30 sono attese ammalarsi nei 5, 10, 15 o 20 anni successivi">
+                               <td style="min-width: 120px;">Risk score V</td>
+                               <td style="min-width: 20px; background-color: #ef4939">&nbsp;</td>
+                               <td style="min-width: 100px;">20% - 30%</td>
+                           </tr>
+                           <tr style="height: 50px" class="" data-original-title="Questa classe di rischio MCV (Malattia CardioVascolare)
+                                 indica che su 100 persone con le stesse caratteristiche
+                                 tra le 15 e le 20 sono attese ammalarsi nei 5, 10, 15 o 20 anni successivi">
+                               <td style="min-width: 120px;">Risk score IV</td>
+                               <td style="min-width: 20px; background-color: #fa9653">&nbsp;</td>
+                               <td style="min-width: 100px;">15% - 20%</td>
+                           </tr>
+                           <tr style="height: 50px" class="" data-original-title="Questa classe di rischio MCV (Malattia CardioVascolare)
+                                 indica che su 100 persone con le stesse caratteristiche
+                                 tra le 10 e le 15 sono attese ammalarsi nei 5, 10, 15 o 20 anni successivi">
+                               <td style="min-width: 120px;">Risk score III</td>
+                               <td style="min-width: 20px; background-color: #fbd889">&nbsp;</td>
+                               <td style="min-width: 100px;">10% - 15%</td>
+                           </tr>
+                           <tr style="height: 50px" class="" data-original-title="Questa classe di rischio MCV (Malattia CardioVascolare)
+                                 indica che su 100 persone con le stesse caratteristiche
+                                 tra le 5 e le 10 sono attese ammalarsi nei 5, 10, 15 o 20 anni successivi">
+                               <td style="min-width: 120px;">Risk score II</td>
+                               <td style="min-width: 20px; background-color: #24af7a">&nbsp;</td>
+                               <td style="min-width: 100px;">5% - 10%</td>
+                           </tr>
+                           <tr style="height: 50px" class="" data-original-title="Questa classe di rischio MCV (Malattia CardioVascolare)
+                                 indica che su 100 persone con le stesse caratteristiche
+                                 meno di 5 sono attese ammalarsi nei 5, 10, 15 o 20 anni successivi">
+                               <td style="min-width: 120px;">Risk score I</td>
+                               <td style="min-width: 20px; background-color: #89d2ac">&nbsp;</td>
+                               <td style="min-width: 100px;">Less than 5%</td>
+                           </tr>
+                           <tr style="height: 50px; visibility: hidden;">
+                               <td style="min-width: 120px;">Risk score I</td>
+                               <td style="min-width: 20px; background-color: #89d2ac">&nbsp;</td>
+                               <td style="min-width: 100px;">Less than 5%</td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </td>
+               <td style="min-width: 350px; max-width: 350px; width: 350px">
+                   <table class="table table-bordered table-striped table-hover table-condensed" id="oTBL_data0">
+                       <tbody>
+                           <tr style="height: 50px">
+                               <td style="background-color: #bf7ead">
+                                   <div class="widget-content tip-top" data-original-title="">
+                                   </div>
+                               </td>
+                               <td style="background-color: #bf7ead">&nbsp;</td>
+                               <td style="background-color: #bf7ead">&nbsp;</td>
+                               <td style="background-color: #bf7ead">&nbsp;</td>
+                           </tr>
+                           <tr style="height: 50px">
+                               <td style="background-color: #ef4939">&nbsp;</td>
+                               <td style="background-color: #ef4939">&nbsp;</td>
+                               <td style="background-color: #ef4939">&nbsp;</td>
+                               <td style="background-color: #ef4939">&nbsp;</td>
+                           </tr>
+                           <tr style="height: 50px">
+                               <td style="background-color: #fa9653">&nbsp;</td>
+                               <td style="background-color: #fa9653">&nbsp;</td>
+                               <td style="background-color: #fa9653">&nbsp;</td>
+                               <td style="background-color: #fa9653">&nbsp;</td>
+                           </tr>
+                           <tr style="height: 50px">
+                               <td style="background-color: #fbd889">&nbsp;</td>
+                               <td style="background-color: #fbd889">&nbsp;</td>
+                               <td style="background-color: #fbd889">&nbsp;</td>
+                               <td style="background-color: #fbd889">&nbsp;</td>
+                           </tr>
+                           <tr style="height: 50px">
+                               <td style="background-color: #24af7a">&nbsp;</td>
+                               <td style="background-color: #24af7a">&nbsp;</td>
+                               <td style="background-color: #24af7a">&nbsp;</td>
+                               <td style="background-color: #24af7a">&nbsp;</td>
+                           </tr>
+                           <tr style="height: 50px">
+                               <td style="background-color: #89d2ac">&nbsp;</td>
+                               <td style="background-color: #89d2ac">&nbsp;</td>
+                               <td style="background-color: #89d2ac">&nbsp;</td>
+                               <td style="background-color: #89d2ac">&nbsp;</td>
+                           </tr>
+                           <tr>
+                               <td>5 years risk</td>
+                               <td>10 years risk</td>
+                               <td>15 years risk</td>
+                               <td>20 years risk</td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </td>
+           </tr>
+       </tbody>
+   </table>
+  <!--    <canvas id="risk-score" style="display: block; width: 100px; height: 100px;"></canvas> -->
+
+    </div>
+</div>
+
 </div>
